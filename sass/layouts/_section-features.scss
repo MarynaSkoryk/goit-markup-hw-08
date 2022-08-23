@@ -1,17 +1,27 @@
 /*Наши особенности*/
 .section-features {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 .our-features {
-  display: flex;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
 }
 
 .our-features__list {
-  width: 270px;
-
-  &:not(:last-child) {
-    margin-right: 30px;
+  @media screen and (min-width: 768px) {
+    width: calc((100% / 2) - 30px);
+  }
+  @media screen and (min-width: 1200px) {
+    width: 270px;
   }
 }
 
@@ -20,16 +30,19 @@
   color: $title-text-color;
   @include font(700, 14px, 1.14, 0.03em);
   text-transform: uppercase;
+  text-align: center;
+  @media screen and (min-width: 768px) {
+    text-align: start;
+  }
 }
 .our-features__text {
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
+  @include font(400, 14px, 1.71, 0.03em);
 }
 .thumb {
   @include centered-flex;
   background-color: $third-background-color;
-  width: 270px;
+  width: 100%;
+  // width: 270px;
   height: 120px;
   margin-bottom: 30px;
   border-radius: 4px;
