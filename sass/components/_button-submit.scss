@@ -1,13 +1,13 @@
 .button-submit {
   font-family: inherit;
-  @include font(700, 16px, 1.9, 0.06em);
+  @include font(700, 16px, 1.88, 0.06em);
   background-color: $accent-text-color;
   color: $color-text-white;
   cursor: pointer;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: none;
   border-radius: 4px;
-  padding: 10px 32px;
+  padding: 10px 24px;
   transition: background-color 250ms $cubic-bezier,
     box-shadow 250ms $cubic-bezier;
 
@@ -15,5 +15,8 @@
   &:focus {
     background-color: $color-change-button;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 10px 32px;
   }
 }
