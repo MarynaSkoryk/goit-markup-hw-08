@@ -1,0 +1,26 @@
+/*Page-Header*/
+.page-header {
+  border-bottom: 1px solid #ececec;
+}
+.page-header__container {
+  display: flex;
+}
+.page-header__logo {
+  margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  text-align: center;
+  justify-content: center;
+}
+.page-header__logo--color {
+  color: $logo-color;
+  transition: color 250ms $cubic-bezier;
+
+  &:hover,
+  &:focus {
+    color: $accent-text-color;
+  }
+}
+.page-header__logo--second-word-color {
+  color: $accent-text-color;
+}

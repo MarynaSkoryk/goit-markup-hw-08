@@ -1,0 +1,38 @@
+/*Main-site-nav*/
+.main-site-nav {
+  @include centered-flex;
+}
+.site-nav {
+  display: flex;
+  color: $title-text-color;
+  @include font(500, 14px, 1.14, 0.02em);
+  list-style: none;
+}
+.site-nav__nav-item {
+  justify-content: center;
+  align-self: center;
+
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
+.site-nav__link-nav {
+  display: block;
+  padding: 32px 0;
+  color: inherit;
+
+  &--current {
+    color: $accent-text-color;
+    position: relative;
+  }
+  &--current::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: $accent-text-color;
+    position: absolute;
+    bottom: 0;
+  }
+}

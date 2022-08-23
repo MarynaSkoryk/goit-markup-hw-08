@@ -1,0 +1,38 @@
+/*Main-auth-nav*/
+.main-auth-nav {
+  @include centered-flex;
+  margin-left: auto;
+}
+.auth-nav {
+  display: flex;
+  color: $primary-text-color;
+  @include font(500, 14px, 1.14, 0.02em);
+  list-style: none;
+  text-decoration: none;
+}
+
+.auth-nav__link {
+  @include centered-flex;
+  padding: 32px 0;
+  color: $primary-text-color;
+  text-decoration: none;
+  transition: color 250ms $cubic-bezier, stroke 250ms $cubic-bezier;
+
+  &:hover,
+  &:focus {
+    stroke: $accent-text-color;
+  }
+}
+
+.auth-nav__nav-item {
+  justify-content: center;
+  align-self: center;
+
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+.auth-nav__button-icon {
+  margin-right: 10px;
+  color: currentColor;
+}

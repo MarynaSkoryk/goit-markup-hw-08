@@ -1,0 +1,73 @@
+/*Наша команда*/
+
+.section-crew {
+  background-color: $third-background-color;
+  padding-bottom: 94px;
+  padding-top: 94px;
+}
+.section-crew__title {
+  text-align: center;
+  color: $title-text-color;
+  @include font(700, 36px, 1.17, 0.03em);
+  margin-bottom: 50px;
+}
+.section-crew__list {
+  @include centered-flex;
+}
+
+.work-card-box {
+  padding: 30px 32px;
+}
+
+.work-card {
+  background-color: $main-background-color;
+  list-style: none;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.work-card-box__name {
+  color: $title-text-color;
+  @include font(500, 16px, 1.19, 0.03em);
+  text-align: center;
+  margin-bottom: 10px;
+}
+.work-card-box__position {
+  @include font(400, 16px, 1.19, 0.03em);
+  text-align: center;
+  margin-bottom: 16px;
+}
+.social-block {
+  @include centered-flex;
+}
+
+.social-block__list {
+  display: block;
+
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+.social-block__link {
+  @include centered-flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: transparent;
+  color: #afb1b8;
+  transition: background-color 250ms $cubic-bezier, color 250ms $cubic-bezier;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-text-color;
+    color: $color-text-white;
+  }
+}
+.social-block__icon {
+  fill: currentColor;
+}

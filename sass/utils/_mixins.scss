@@ -1,0 +1,19 @@
+@mixin font($font-weight, $font-size, $line-height, $letter-spacing) {
+  font-weight: $font-weight;
+  font-size: $font-size;
+  line-height: $line-height;
+  letter-spacing: $letter-spacing;
+}
+@mixin centered-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin centered-margin {
+  margin: 0 auto;
+}
+@mixin card-boders {
+  border-bottom: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+}
