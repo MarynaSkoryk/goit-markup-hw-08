@@ -2,21 +2,43 @@
 
 .section-crew {
   background-color: $third-background-color;
-  padding-bottom: 94px;
-  padding-top: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @include desktop {
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
 }
 .section-crew__title {
   text-align: center;
   color: $title-text-color;
-  @include font(700, 36px, 1.17, 0.03em);
-  margin-bottom: 50px;
+  @include font(700, 28px, 1.18, 0.03em);
+  margin-bottom: 30px;
+
+  @include desktop {
+    @include font(700, 36px, 1.18, 0.03em);
+    margin-bottom: 50px;
+  }
 }
 .section-crew__list {
-  @include centered-flex;
+  display: block;
+
+  @include tablet {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  @include desktop {
+    @include centered-flex;
+    flex-wrap: nowrap;
+  }
 }
 
 .work-card-box {
-  padding: 30px 32px;
+  padding: 30px 24px;
+  @include desktop {
+    padding: 30px 30px;
+  }
 }
 
 .work-card {
@@ -26,9 +48,13 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 
-  &:not(:last-child) {
-    margin-right: 30px;
+  @include tablet {
+    width: calc((100% / 2) - 30px);
   }
+}
+.work-card__image {
+  margin: 0 auto;
+  width: 100%;
 }
 
 .work-card-box__name {
@@ -48,10 +74,6 @@
 
 .social-block__list {
   display: block;
-
-  &:not(:last-child) {
-    margin-right: 10px;
-  }
 }
 .social-block__link {
   @include centered-flex;

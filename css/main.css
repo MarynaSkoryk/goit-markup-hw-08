@@ -1090,34 +1090,71 @@ body {
 /*Наша команда*/
 .section-crew {
   background-color: #f5f4fa;
-  padding-bottom: 94px;
-  padding-top: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .section-crew {
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
 }
 
 .section-crew__title {
   text-align: center;
   color: #212121;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
+  font-size: 28px;
+  line-height: 1.18;
   letter-spacing: 0.03em;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .section-crew__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
+  }
 }
 
 .section-crew__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  display: block;
+}
+@media screen and (min-width: 768px) {
+  .section-crew__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section-crew__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
 }
 
 .work-card-box {
-  padding: 30px 32px;
+  padding: 30px 24px;
+}
+@media screen and (min-width: 1200px) {
+  .work-card-box {
+    padding: 30px 30px;
+  }
 }
 
 .work-card {
@@ -1127,8 +1164,15 @@ body {
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-.work-card:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 768px) {
+  .work-card {
+    width: calc(50% - 30px);
+  }
+}
+
+.work-card__image {
+  margin: 0 auto;
+  width: 100%;
 }
 
 .work-card-box__name {
@@ -1164,9 +1208,6 @@ body {
 
 .social-block__list {
   display: block;
-}
-.social-block__list:not(:last-child) {
-  margin-right: 10px;
 }
 
 .social-block__link {
