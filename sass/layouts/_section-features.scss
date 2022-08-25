@@ -3,13 +3,13 @@
   padding-top: 60px;
   padding-bottom: 60px;
 
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     padding-top: 94px;
     padding-bottom: 94px;
   }
 }
 .our-features {
-  @media screen and (min-width: 768px) {
+  @include tablet {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
@@ -17,10 +17,10 @@
 }
 
 .our-features__list {
-  @media screen and (min-width: 768px) {
+  @include tablet {
     width: calc((100% / 2) - 30px);
   }
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     width: 270px;
   }
 }
