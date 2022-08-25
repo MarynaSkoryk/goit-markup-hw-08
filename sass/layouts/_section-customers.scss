@@ -1,29 +1,49 @@
 /*Постоянные клиенты*/
 .customers {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @include desktop {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 .customers__title {
-  @include font(700, 36px, 1.17, 0.03em);
+  @include font(700, 28px, 1.18, 0.03em);
   text-align: center;
   color: $title-text-color;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+  @include desktop {
+    @include font(700, 36px, 1.18, 0.03em);
+    margin-bottom: 50px;
+  }
 }
 .customers__list {
-  display: flex;
+  @include centered-flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  width: 100%;
+
+  @include desktop {
+    flex-wrap: nowrap;
+  }
 }
 .client-box {
-  width: 170px;
+  width: 210px;
   height: 92px;
 
-  &:not(:last-child) {
-    margin-right: 30px;
+  @include tablet {
+    width: 226px;
+    height: 92px;
+  }
+  @include desktop {
+    width: 170px;
+    height: 92px;
   }
 }
 
 .client-box__link {
   @include centered-flex;
-  box-sizing: border-box;
+
   fill: #afb1b8;
   border: 1px solid #afb1b8;
   border-radius: 4px;
