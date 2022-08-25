@@ -1,11 +1,38 @@
 /*Portfolio*/
 .main-section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @include desktop {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 .buttons-list {
-  @include centered-flex;
-  margin-bottom: 50px;
+  @include tablet {
+    @include centered-flex;
+    margin-bottom: 30px;
+  }
+  @include desktop {
+    margin-bottom: 50px;
+  }
+}
+.buttons-list__flex-first {
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    display: flex;
+    margin-bottom: 15px;
+  }
+  @include tablet {
+    display: flex;
+    margin-right: 8px;
+  }
+}
+.buttons-list__flex-second {
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    display: flex;
+  }
+  @include tablet {
+    display: flex;
+  }
 }
 .buttons-list__item {
   background-color: $third-background-color;
