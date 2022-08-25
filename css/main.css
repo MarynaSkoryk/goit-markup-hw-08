@@ -938,6 +938,7 @@ body {
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-image.jpg);
   background-repeat: no-repeat;
   background-position: center;
+  margin: 0 auto;
 }
 @media screen and (min-width: 1200px) {
   .hero {
@@ -999,6 +1000,9 @@ body {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     gap: 30px;
   }
 }
@@ -1035,6 +1039,11 @@ body {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+}
+@media screen and (min-width: 320px) and (max-width: 1199px) {
+  .our-features__text {
+    margin-bottom: 30px;
+  }
 }
 
 .thumb {
@@ -1164,6 +1173,9 @@ body {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     gap: 30px;
   }
 }

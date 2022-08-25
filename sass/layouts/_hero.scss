@@ -9,7 +9,7 @@
     url(../images/hero-image.jpg);
   background-repeat: no-repeat;
   background-position: center;
-
+  margin: 0 auto;
   @include desktop {
     padding: 200px 0;
     max-width: 1600px;
