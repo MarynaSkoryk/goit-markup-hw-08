@@ -33,59 +33,75 @@
           ><span class="page-header__logo--second-word-color">Web</span
           >Studio</a
         >
-        <nav class="main-site-nav">
-          <ul class="site-nav">
-            <li class="site-nav__nav-item">
-              <a
-                href="./index.html"
-                class="link site-nav__link-nav site-nav__link-nav--current"
-                >Студія</a
-              >
-            </li>
-            <li class="site-nav__nav-item">
-              <a href="./portfolio.html" class="link site-nav__link-nav"
-                >Портфоліо</a
-              >
-            </li>
-            <li class="site-nav__nav-item">
-              <a href="" class="link site-nav__link-nav">Контакти</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="main-auth-nav">
-          <ul class="auth-nav">
-            <li class="auth-nav__nav-item">
-              <a href="mailto:info@devstudio.com" class="link auth-nav__link"
-                ><svg class="auth-nav__button-icon" width="16px" height="12px">
-                  <use href="./images/icons.svg#envelope"></use></svg
-                >info@devstudio.com
-              </a>
-            </li>
-            <li class="auth-nav__nav-item">
-              <a href="tel:+380961111111" class="link auth-nav__link"
-                ><svg class="auth-nav__button-icon" width="10px" height="16px">
-                  <use href="./images/icons.svg#smartphone"></use></svg
-                >+38 096 111 11 11
-              </a>
-            </li>
-          </ul>
+        <div class="mob-menu data-menu">
+          <nav class="main-site-nav">
+            <ul class="site-nav">
+              <li class="site-nav__nav-item">
+                <a
+                  href="./index.html"
+                  class="link site-nav__link-nav site-nav__link-nav--current"
+                  >Студія</a
+                >
+              </li>
+              <li class="site-nav__nav-item">
+                <a href="./portfolio.html" class="link site-nav__link-nav"
+                  >Портфоліо</a
+                >
+              </li>
+              <li class="site-nav__nav-item">
+                <a href="" class="link site-nav__link-nav">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="main-auth-nav">
+            <ul class="auth-nav">
+              <li class="auth-nav__nav-item">
+                <a href="mailto:info@devstudio.com" class="link auth-nav__link"
+                  ><svg
+                    class="auth-nav__button-icon"
+                    width="16px"
+                    height="12px"
+                  >
+                    <use href="./images/icons.svg#envelope"></use></svg
+                  >info@devstudio.com
+                </a>
+              </li>
+              <li class="auth-nav__nav-item">
+                <a href="tel:+380961111111" class="link auth-nav__link"
+                  ><svg
+                    class="auth-nav__button-icon"
+                    width="10px"
+                    height="16px"
+                  >
+                    <use href="./images/icons.svg#smartphone"></use></svg
+                  >+38 096 111 11 11
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
         <div class="menu-header">
           <button
-            class="menu-open"
+            class="menu-header__menu-button is-open"
+            type="button"
+            data-menu-button
             aria-expanded="false"
             aria-controls="menu-container"
           >
             <svg
+              class="menu-header__icon"
               width="40px"
               height="40px"
               aria-label="Переключення мобільного меню"
             >
               <use
-                class="icon-cross"
+                class="menu-header__icon-cross"
                 href="./images/icons.svg#menu-close"
               ></use>
-              <use class="icon-menu" href="./images/icons.svg#menu-open"></use>
+              <use
+                class="menu-header__icon-menu"
+                href="./images/icons.svg#menu-open"
+              ></use>
             </svg>
           </button>
         </div>

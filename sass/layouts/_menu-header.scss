@@ -1,0 +1,19 @@
+.menu-header {
+  @include centered-flex;
+  margin-left: auto;
+}
+.menu-header__menu-button {
+  display: inline-flex;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+.mob-menu {
+  display: none;
+
+  &.is-open {
+    display: block;
+  }
+}

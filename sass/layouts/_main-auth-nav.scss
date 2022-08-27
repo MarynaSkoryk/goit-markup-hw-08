@@ -1,8 +1,8 @@
 /*Main-auth-nav*/
 .main-auth-nav {
-  @media screen and (min-width: 320px) and (max-width: 767px) {
-    display: none;
-  }
+  // @media screen and (min-width: 320px) and (max-width: 767px) {
+  //   display: none;
+  // }
   @include centered-flex;
   margin-left: auto;
 }
