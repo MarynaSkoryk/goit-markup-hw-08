@@ -1,8 +1,9 @@
 .logo {
   display: inline-block;
-  min-width: 145px;
   text-decoration: none;
   font-family: "Raleway";
-
-  @include font(700, 26px, 1.19, 0.03em);
+  min-width: 134px;
+  @include font(700, 24px, 1.17, 0.03em);
+  // min-width: 145px;
+  // @include font(700, 26px, 1.19, 0.03em);
 }
