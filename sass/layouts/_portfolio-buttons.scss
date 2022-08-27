@@ -8,6 +8,7 @@
   }
 }
 .buttons-list {
+  margin-bottom: 40px;
   @include tablet {
     @include centered-flex;
     margin-bottom: 30px;
