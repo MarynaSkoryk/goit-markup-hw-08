@@ -1,8 +1,8 @@
 /*Наши работы*/
 .container-works {
-  @include tablet;
-  @include desktop {
+  @include tablet {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 30px;
   }

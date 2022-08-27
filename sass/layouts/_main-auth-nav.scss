@@ -24,7 +24,6 @@
 .auth-nav__link {
   @include tablet {
     color: $primary-text-color;
-    text-decoration: none;
     transition: color 250ms $cubic-bezier, stroke 250ms $cubic-bezier;
 
     &:hover,
@@ -38,9 +37,14 @@
 }
 
 .auth-nav__nav-item {
+  @include tablet {
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
   @include desktop {
     justify-content: center;
-    align-self: center;
+    align-self: baseline;
 
     &:not(:last-child) {
       margin-right: 30px;
