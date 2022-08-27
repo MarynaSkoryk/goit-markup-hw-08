@@ -3,16 +3,20 @@
   border-bottom: 1px solid #ececec;
 }
 .page-header__container {
-  display: flex;
+  @include centered-flex;
+  justify-content: space-between;
 }
 .page-header__logo {
   padding-top: 16px;
   padding-bottom: 16px;
-  // padding-top: 24px;
-  // padding-bottom: 25px;
-  // margin-right: 93px;
-  // text-align: center;
-  // justify-content: center;
+  @include tablet {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+  @include desktop {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
 }
 .page-header__logo--color {
   color: $logo-color;

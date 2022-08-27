@@ -4,6 +4,8 @@
   font-family: "Raleway";
   min-width: 134px;
   @include font(700, 24px, 1.17, 0.03em);
+  @include tablet {
+  }
   // min-width: 145px;
   // @include font(700, 26px, 1.19, 0.03em);
 }
