@@ -2,8 +2,10 @@
 .container-works {
   @include tablet {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    // justify-content: center;
     flex-wrap: wrap;
+
     gap: 30px;
   }
 }
