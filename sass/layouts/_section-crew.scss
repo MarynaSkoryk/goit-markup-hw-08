@@ -73,6 +73,7 @@
 }
 .social-block {
   @include centered-flex;
+  gap: 10px;
 }
 
 .social-block__list {

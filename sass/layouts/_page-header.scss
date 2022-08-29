@@ -4,7 +4,8 @@
 }
 .page-header__container {
   @include centered-flex;
-  justify-content: space-between;
+
+  // justify-content: space-between;
 }
 .page-header__logo {
   padding-top: 16px;
@@ -12,10 +13,12 @@
   @include tablet {
     padding-top: 26px;
     padding-bottom: 26px;
+    margin-right: 92px;
   }
   @include desktop {
     padding-top: 24px;
     padding-bottom: 25px;
+    margin-right: 92px;
   }
 }
 .page-header__logo--color {

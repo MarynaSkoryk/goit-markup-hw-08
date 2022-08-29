@@ -27,17 +27,19 @@
 }
 .signup-form__button {
   margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: auto;
+  margin-left: auto;
+
   @include font(700, 16px, 1.88, 0.06em);
   box-sizing: border-box;
   .signup-form:hover &,
   .signup-form__input:focus + & {
     background-color: $color-change-button;
   }
-  @include tablet {
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-  }
+
   @include desktop {
     margin-top: 0;
   }
